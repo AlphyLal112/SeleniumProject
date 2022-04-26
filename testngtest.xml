@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Testng.url_verify"/>
+      <class name="Testng.Alert"/>
+      <!-- <class name="Testng.Checkbox"/>
+      <class name="Testng.Frames"/>
+      <class name="Testng.Dropdown"/>
+      <class name="Testng.Radiobutton"/>
+      <class name="Testng.Actionstestcase"/>  -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

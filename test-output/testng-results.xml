@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-20T15:13:46 IST" name="Default suite" finished-at="2022-04-20T15:14:57 IST" duration-ms="70557">
+  <suite started-at="2022-04-26T13:48:39 IST" name="Suite" finished-at="2022-04-26T13:49:39 IST" duration-ms="59464">
     <groups>
     </groups>
-    <test started-at="2022-04-20T15:13:46 IST" name="Default test" finished-at="2022-04-20T15:14:57 IST" duration-ms="70557">
-      <class name="Testng.Actionstestcase">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Testng.Actionstestcase@63355449]" started-at="2022-04-20T15:13:46 IST" name="beforeTest" finished-at="2022-04-20T15:13:55 IST" duration-ms="9349" status="PASS">
+    <test started-at="2022-04-26T13:48:39 IST" name="Test" finished-at="2022-04-26T13:49:39 IST" duration-ms="59464">
+      <class name="Testng.Alert">
+        <test-method signature="f()[pri:4, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:15 IST" name="f" finished-at="2022-04-26T13:49:26 IST" duration-ms="11171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="dragdrop()[pri:1, instance:Testng.Actionstestcase@63355449]" started-at="2022-04-20T15:13:55 IST" name="dragdrop" finished-at="2022-04-20T15:14:56 IST" duration-ms="60694" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="test2()[pri:5, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:26 IST" name="test2" finished-at="2022-04-26T13:49:39 IST" duration-ms="12419" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragdrop -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Testng.Actionstestcase@63355449]" started-at="2022-04-20T15:14:56 IST" name="afterTest" finished-at="2022-04-20T15:14:57 IST" duration-ms="402" status="PASS">
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:39 IST" name="afterTest" finished-at="2022-04-26T13:49:39 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Testng.Actionstestcase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Testng.Alert -->
+      <class name="Testng.url_verify">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:39 IST" name="beforeTest" finished-at="2022-04-26T13:48:58 IST" duration-ms="18174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="urlverification()[pri:1, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:58 IST" name="urlverification" finished-at="2022-04-26T13:48:58 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlverification -->
+        <test-method signature="showmsg()[pri:2, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:58 IST" name="showmsg" finished-at="2022-04-26T13:49:08 IST" duration-ms="10804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showmsg -->
+        <test-method signature="addition()[pri:3, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:49:08 IST" name="addition" finished-at="2022-04-26T13:49:15 IST" duration-ms="6471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addition -->
+      </class> <!-- Testng.url_verify -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
