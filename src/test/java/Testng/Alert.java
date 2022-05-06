@@ -1,4 +1,5 @@
 package Testng;
+
 import utility.webdriverManager;
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
@@ -8,16 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-
 public class Alert extends webdriverManager {
 	static WebDriver driver;
-	By inputform = By.xpath("//*[@id=\"alert-modal\"]");
+	// By inputform = By.xpath("//*[@id=\"alert-modal\"]");
 
 	@Test(priority = 4, enabled = true)
-	public void f() throws InterruptedException {
+	public void acceptalert() throws InterruptedException {
 		driver = driver();
-		JavascriptExecutor obj = (JavascriptExecutor) driver;
-		obj.executeScript("window.scrollBy(800, 0)");
 		WebElement inputForm = driver.findElement(By.xpath("//*[@id=\"alert-modal\"]"));
 		inputForm.click();
 		Thread.sleep(3000);
@@ -34,6 +32,7 @@ public class Alert extends webdriverManager {
 		System.out.println(value);
 		objalert.accept();// toclickokbutton
 		// objalert.sendKeys("123");
+		alertaccept();
 
 	}
 
@@ -47,8 +46,7 @@ public class Alert extends webdriverManager {
 //			  javascript.click();
 //			  Thread.sleep(3000);
 		WebElement clickme = driver.findElement(By.xpath("/html/body/section/div/div/div[2]/div[3]/div/div[2]/button"));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", clickme); // used to scroll visibility of an element
+		javascriptexecutorscrollintoview(clickme);// used to scroll visibility of an element
 		Thread.sleep(3000);
 		clickme.click();
 		Thread.sleep(3000);

@@ -1,0 +1,65 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-05T02:17:23.379Z",
+        "line": 3,
+        "name": "Input a value",
+        "description": "",
+        "id": "test-input-form;input-a-value",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2741338400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user want to click on input form",
+            "match": {
+              "location": "NewTest.First()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3293858700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter a value",
+            "match": {
+              "location": "NewTest.second()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2386013400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "display entered value",
+            "match": {
+              "location": "NewTest.Third()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@inputform"
+          }
+        ]
+      }
+    ],
+    "name": "Test input form",
+    "description": "",
+    "id": "test-input-form",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/Input.feature",
+    "tags": []
+  }
+]

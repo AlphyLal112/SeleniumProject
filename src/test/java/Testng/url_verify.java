@@ -6,6 +6,8 @@ import org.testng.asserts.SoftAssert;
 import utility.ExcelRead1;
 import utility.webdriverManager;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import java.io.IOException;
 
@@ -17,6 +19,7 @@ import org.testng.annotations.AfterTest;
 
 public class url_verify extends webdriverManager {
 	static WebDriver driver;
+	ExcelRead1 er;
 	By inputform=By.xpath("//*[@id='collapsibleNavbar']/ul/li[2]/a");
 
 	@Test(priority = 1, enabled=true)
@@ -32,10 +35,9 @@ public class url_verify extends webdriverManager {
 		objsoftassert.assertAll();
 	}
 
-	@Test(priority=2,enabled=true)
- public void showmsg() throws IOException, InterruptedException {
-	ExcelRead1 er = new ExcelRead1();
-	String my_message = er.readData(0,0);
+	@Test(priority=2,enabled=true, dataProvider="sendvalues")
+ public void showmsg(Integer n, String s) throws IOException, InterruptedException {
+	//String my_message = er.readData(0,0);
     WebElement inputForm = driver.findElement(inputform);
     //EXPLICIT WAIT
     explicitwaitelementToBeClickable(inputform);
@@ -43,7 +45,7 @@ public class url_verify extends webdriverManager {
 	Thread.sleep(2000);
 	//String mymsg="Hello";
 	WebElement Enter_Message = driver.findElement(By.id("single-input-field"));
-    Enter_Message.sendKeys("ABC");
+    Enter_Message.sendKeys(s);
     Thread.sleep(2000);
 	WebElement Show_Message = driver.findElement(By.id("button-one"));
 	Show_Message.click();
@@ -52,7 +54,7 @@ public class url_verify extends webdriverManager {
 	String Msg = Your_Message.getText();
 	System.out.println(Msg);
 	
-	if(Msg.contains(my_message)) {
+	if(Msg.contains(s)) {
 		
 	Assert.assertTrue(true);
 	}
@@ -61,7 +63,7 @@ public class url_verify extends webdriverManager {
 	}
 	}
 
-	@Test(priority=3,enabled=true)
+	@Test(priority=3,enabled=false)
 	public void addition() throws InterruptedException  {
 		int a=2;
 		int b=4;	
@@ -88,12 +90,24 @@ public class url_verify extends webdriverManager {
 			Assert.assertTrue(false);
 		}
 	}
-	
+	@Parameters({"Browser","Url"})
 	@BeforeTest
-	public void beforeTest() {
+	public void beforeTest(String Browser, String Url) throws IOException{
+		 er = new ExcelRead1();
 	
-		driver = launchbrowser("chrome","https://selenium.obsqurazone.com/index.php");
+		//driver = launchbrowser("chrome","https://selenium.obsqurazone.com/index.php");//testdata in testcase itself
+		driver = launchbrowser(Browser, Url);
 	}
+		
+	@DataProvider
+	  public Object[][] sendvalues() {
+	    return new Object[][] {
+	      new Object[] { 1, "Hello" },
+	      new Object[] { 2, "Test" },
+	      new Object[] { 3, "ABC" },
+	    };
+}
+
 
 //	@AfterTest
 //	public void afterTest() {

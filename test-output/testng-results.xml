@@ -1,42 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-26T13:48:39 IST" name="Suite" finished-at="2022-04-26T13:49:39 IST" duration-ms="59464">
+  <suite started-at="2022-05-05T08:01:29 IST" name="Suite" finished-at="2022-05-05T08:02:09 IST" duration-ms="39725">
     <groups>
     </groups>
-    <test started-at="2022-04-26T13:48:39 IST" name="Test" finished-at="2022-04-26T13:49:39 IST" duration-ms="59464">
-      <class name="Testng.Alert">
-        <test-method signature="f()[pri:4, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:15 IST" name="f" finished-at="2022-04-26T13:49:26 IST" duration-ms="11171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="test2()[pri:5, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:26 IST" name="test2" finished-at="2022-04-26T13:49:39 IST" duration-ms="12419" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Testng.Alert@3427b02d]" started-at="2022-04-26T13:49:39 IST" name="afterTest" finished-at="2022-04-26T13:49:39 IST" duration-ms="272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Testng.Alert -->
+    <test started-at="2022-05-05T08:01:29 IST" name="Test" finished-at="2022-05-05T08:02:09 IST" duration-ms="39725">
       <class name="Testng.url_verify">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:39 IST" name="beforeTest" finished-at="2022-04-26T13:48:58 IST" duration-ms="18174" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:Testng.url_verify@6b927fb]" started-at="2022-05-05T08:01:29 IST" name="beforeTest" finished-at="2022-05-05T08:01:45 IST" duration-ms="16295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://selenium.obsqurazone.com/index.php]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="urlverification()[pri:1, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:58 IST" name="urlverification" finished-at="2022-04-26T13:48:58 IST" duration-ms="37" status="PASS">
+        <test-method signature="urlverification()[pri:1, instance:Testng.url_verify@6b927fb]" started-at="2022-05-05T08:01:45 IST" name="urlverification" finished-at="2022-05-05T08:01:45 IST" duration-ms="49" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlverification -->
-        <test-method signature="showmsg()[pri:2, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:48:58 IST" name="showmsg" finished-at="2022-04-26T13:49:08 IST" duration-ms="10804" status="PASS">
+        <test-method signature="showmsg(java.lang.Integer,java.lang.String)[pri:2, instance:Testng.url_verify@6b927fb]" started-at="2022-05-05T08:01:45 IST" name="showmsg" data-provider="sendvalues" finished-at="2022-05-05T08:01:53 IST" duration-ms="7898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hello]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showmsg -->
-        <test-method signature="addition()[pri:3, instance:Testng.url_verify@72f926e6]" started-at="2022-04-26T13:49:08 IST" name="addition" finished-at="2022-04-26T13:49:15 IST" duration-ms="6471" status="PASS">
+        <test-method signature="showmsg(java.lang.Integer,java.lang.String)[pri:2, instance:Testng.url_verify@6b927fb]" started-at="2022-05-05T08:01:53 IST" name="showmsg" data-provider="sendvalues" finished-at="2022-05-05T08:02:01 IST" duration-ms="7831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addition -->
+        </test-method> <!-- showmsg -->
+        <test-method signature="showmsg(java.lang.Integer,java.lang.String)[pri:2, instance:Testng.url_verify@6b927fb]" started-at="2022-05-05T08:02:01 IST" name="showmsg" data-provider="sendvalues" finished-at="2022-05-05T08:02:09 IST" duration-ms="7570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showmsg -->
       </class> <!-- Testng.url_verify -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
